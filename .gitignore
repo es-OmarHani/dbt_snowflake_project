@@ -3,6 +3,13 @@ dbt_packages/
 logs/
 .env
 
+# Ignore DBT folders not yet in use
+analyses/
+macros/
+seeds/
+snapshots/
+tests/
+
 # VS Code or editor files
 .vscode/
 .idea/
