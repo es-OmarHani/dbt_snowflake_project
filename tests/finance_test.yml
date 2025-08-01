@@ -1,0 +1,16 @@
+version: 2
+
+models:
+    - name: stg_orders
+      columns:
+        - name: order_status
+          tests:
+            - accepted_values:
+                  values: ['Completed', 'Cancelled', 'Pending']
+
+    - name: stg_order_items
+      columns:
+        - name: total_price
+          description: "Sum of all item prices in the order"
+          tests:
+            - not_null
