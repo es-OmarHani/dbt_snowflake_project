@@ -1,0 +1,11 @@
+version: 2
+
+sources:
+  - name: finance_raw
+    database: finance_db      # db on snowflake
+    schema: finance_raw       #schema on snowflake
+    tables:
+      - name: customers
+      - name: orders
+      - name: order_items
+      - name: products
