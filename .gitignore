@@ -1,0 +1,11 @@
+target/
+dbt_packages/
+logs/
+.env
+
+# VS Code or editor files
+.vscode/
+.idea/
+
+# Python virtual env
+.venv/
